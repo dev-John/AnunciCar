@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom'
 import Typing from 'react-typing-animation';
 
 
@@ -19,6 +20,15 @@ const AnimatedTextTwo = () => (
 );
 
 export default function Outdoor() {
+  const history = useHistory();
+
+  function handlesStart () {
+    history.push('/register');
+  }
+
+  function handlesContinue () {
+    history.push('/login');
+  }
 
   return (
     <div className="main-container">
@@ -30,8 +40,8 @@ export default function Outdoor() {
       </section>
       
       <div className="spare-buttons">
-        <button className="button" style={{height:'100px'}}>COMEÇAR A NEGOCIAR</button>
-        <button className="button-secondary">ENTRAR</button>
+        <button onClick={handlesStart} className="button" style={{height:'100px'}}>COMEÇAR A NEGOCIAR</button>
+        <button onClick={handlesContinue} className="button-secondary">ENTRAR</button>
       </div>
       
     </div>
