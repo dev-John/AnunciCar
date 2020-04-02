@@ -1,0 +1,27 @@
+img {
+  margin-top: 100px;
+  height: 300px;
+}
+
+.main-container {
+  width: 100%;
+  margin-left: 15%;
+  max-width: 1200px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.spare-buttons {
+  margin-left: 200px;
+  justify-content: space-between;
+}
+
+.text-up {
+  margin-left: 140px;
+  margin-top: 20px;
+}
+
+.text-down {
+  margin-left: 430px;
+}
