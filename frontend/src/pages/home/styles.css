@@ -2,6 +2,7 @@ header {
   /* border: 1px solid; */
   max-width: 100%;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.07);
+  overflow: hidden;
 }
 
 header img {
@@ -20,44 +21,43 @@ li img {
 }
 
 .search-container {
-  width: 100%;
+  width: 300px;
   max-width: 300px;
-  height: 100vh;
+  height: 600px;
   margin: 0 auto;
-
-  /* display: table-cell; */
+  z-index: 1;
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.09);
   float:left;
+  overflow:hidden;  /*code added to prevent scroll */
+  position: fixed;
 }
 
 .search-container form input {
   margin: 7%;
-    width: auto;
+  width: auto;
 }
 
 .results-span {
   background: hsl(216, 26%, 96%);
+  margin-left: 300px;
   display: flex;
   overflow:hidden;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding-top: 10px;
   padding-left: 20px;
   font-size: 15px;
 }
 
 .content {
-  /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.07);
-  float: left; */
-  margin-left:auto;
+  margin-left: 300px; /* Same as the width of the sidenav */
   margin-right:auto;
-  /* margin-top: 5px; */
   margin-bottom:5px;
   display:flex;
-  height: 800px;
+  height: 677px;
   background: hsl(216, 26%, 96%);
-  overflow:hidden;
+  overflow: auto;  
 }
 
 .content ul {

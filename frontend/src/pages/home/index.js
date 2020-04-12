@@ -16,9 +16,7 @@ export default function Home() {
         <img src={logoImg} style={{height: '70px', width: '70px'}} alt="Be The Hero"/>
       </header>
       
-      <div className="search-container">
-        {/* <div className="content"> */}
-            
+      <div className="search-container">            
           <div className="spare-items">
             <h2>Carros</h2>
             <h2>Motos</h2>
@@ -26,17 +24,8 @@ export default function Home() {
           <form action="">
             <input type="text" placeholder="Pesquisar um veículo =D" />
           </form>  
-          
-
-          {/* <form action="">
-            <input type="text" placeholder="Nome" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Senha" />
-            <input type="password" placeholder="Confirme sua senha" />
-            <button className="button">Cadastrar</button>
-          </form> */}
-        {/* </div>       */}
       </div>
+
       <span className="results-span">Resultados da sua pesquisa</span>
       <div className="content">
           <ul>
@@ -72,6 +61,20 @@ export default function Home() {
               <p>Sporting Automático . 2016</p>
             </li>
 
+            <li>              
+              <img src={carroImg} alt="Imagem do veículo"/>
+              <div className="spare-items">
+                <strong>Fiat Uno</strong> <strong>R$ 33.000,00</strong>
+              </div>
+              <p>Sporting Automático . 2016</p>
+            </li>
+            <li>              
+              <img src={carroImg} alt="Imagem do veículo"/>
+              <div className="spare-items">
+                <strong>Fiat Uno</strong> <strong>R$ 33.000,00</strong>
+              </div>
+              <p>Sporting Automático . 2016</p>
+            </li>
 
           </ul>
       </div>
