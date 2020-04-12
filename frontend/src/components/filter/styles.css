@@ -1,0 +1,26 @@
+.main-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.main-container form input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+}
+
+.main-container form button {
+  padding: 10px 20px;
+}
+
+@media (max-width: 800px) {
+  .main-container input {
+    margin: 10px 0;
+  }
+  
+  .main-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
