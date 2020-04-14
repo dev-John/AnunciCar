@@ -1,0 +1,36 @@
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  width: 25%;
+  margin-left: 33.3%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.custom-msg {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.custom-msg svg {
+  margin-right: 8px;
+}
